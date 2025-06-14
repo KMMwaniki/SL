@@ -2,9 +2,10 @@ services:
   - type: web
     name: suvida-website
     env: static
-    buildCommand: echo "No build needed for static site"
+    buildCommand: ""
     staticPublishPath: .
     routes:
       - type: rewrite
         source: /*
         destination: /index.html
+
