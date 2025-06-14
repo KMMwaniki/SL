@@ -476,3 +476,22 @@ body {
     font-size: 6rem;
   }
 }
+
+.w-80 {
+  width: 320px;
+  max-width: 100%;
+}
+
+.h-24 {
+  height: 96px;
+}
+
+@media (max-width: 768px) {
+  .w-80 {
+    width: 280px;
+  }
+
+  .h-24 {
+    height: 80px;
+  }
+}
