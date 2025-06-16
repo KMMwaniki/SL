@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = ""
     sections.forEach((section) => {
       const sectionTop = section.offsetTop
-      const sectionHeight = section.clientHeight
       if (window.pageYOffset >= sectionTop - 200) {
         current = section.getAttribute("id")
       }
@@ -38,10 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Works filter functionality
+// Projects filter functionality
 document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn")
-  const galleryCategories = document.querySelectorAll(".gallery-category")
+  const projectCards = document.querySelectorAll(".project-card")
 
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
@@ -51,13 +50,20 @@ document.addEventListener("DOMContentLoaded", () => {
       filterBtns.forEach((b) => b.classList.remove("active"))
       this.classList.add("active")
 
-      // Show/hide categories
-      galleryCategories.forEach((category) => {
-        category.classList.remove("active")
-        if (category.classList.contains(filter)) {
+      // Show/hide projects
+      projectCards.forEach((card) => {
+        if (filter === "all" || card.classList.contains(filter)) {
+          card.style.display = "block"
           setTimeout(() => {
-            category.classList.add("active")
+            card.style.opacity = "1"
+            card.style.transform = "translateY(0)"
           }, 100)
+        } else {
+          card.style.opacity = "0"
+          card.style.transform = "translateY(20px)"
+          setTimeout(() => {
+            card.style.display = "none"
+          }, 300)
         }
       })
     })
@@ -78,12 +84,41 @@ function handleInstagram() {
   window.open("https://instagram.com/suvida_limited", "_blank")
 }
 
-// Scroll to works
-function scrollToWorks() {
-  document.getElementById("works").scrollIntoView({
+// Scroll functions
+function scrollToProjects() {
+  document.getElementById("projects").scrollIntoView({
     behavior: "smooth",
   })
 }
+
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView({
+    behavior: "smooth",
+  })
+}
+
+// Mobile menu toggle
+function toggleMobileMenu() {
+  const navMenu = document.querySelector(".nav-menu")
+  const navActions = document.querySelector(".nav-actions")
+  const mobileBtn = document.querySelector(".mobile-menu-btn")
+
+  navMenu.classList.toggle("mobile-open")
+  navActions.classList.toggle("mobile-open")
+  mobileBtn.classList.toggle("active")
+}
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar")
+  if (window.scrollY > 50) {
+    navbar.style.background = "rgba(255, 255, 255, 0.98)"
+    navbar.style.backdropFilter = "blur(20px)"
+  } else {
+    navbar.style.background = "rgba(255, 255, 255, 0.95)"
+    navbar.style.backdropFilter = "blur(10px)"
+  }
+})
 
 // Intersection Observer for animations
 const observerOptions = {
@@ -102,7 +137,9 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
-  const animatedElements = document.querySelectorAll(".hero-grid, .story-grid, .craft-grid, .works-grid, .connect-grid")
+  const animatedElements = document.querySelectorAll(
+    ".hero-content, .hero-visual, .about-grid, .services-grid, .projects-grid, .contact-content",
+  )
   animatedElements.forEach((el) => {
     el.style.opacity = "0"
     el.style.transform = "translateY(30px)"
@@ -111,8 +148,13 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Mobile sidebar toggle (for future mobile menu)
-function toggleSidebar() {
-  const sidebar = document.querySelector(".sidebar")
-  sidebar.classList.toggle("open")
-}
+// Parallax effect for hero shapes
+window.addEventListener("scroll", () => {
+  const scrolled = window.pageYOffset
+  const shapes = document.querySelectorAll(".bg-shape-1, .bg-shape-2, .bg-shape-3, .bg-shape-4")
+
+  shapes.forEach((shape, index) => {
+    const speed = (index + 1) * 0.1
+    shape.style.transform += ` translateY(${scrolled * speed}px)`
+  })
+})
