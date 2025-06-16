@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let current = ""
     sections.forEach((section) => {
       const sectionTop = section.offsetTop
+      const sectionHeight = section.clientHeight
       if (window.pageYOffset >= sectionTop - 200) {
         current = section.getAttribute("id")
       }
@@ -37,33 +38,26 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Projects filter functionality
+// Project tabs functionality
 document.addEventListener("DOMContentLoaded", () => {
-  const filterBtns = document.querySelectorAll(".filter-btn")
-  const projectCards = document.querySelectorAll(".project-card")
+  const tabBtns = document.querySelectorAll(".tab-btn")
+  const projectCategories = document.querySelectorAll(".project-category")
 
-  filterBtns.forEach((btn) => {
+  tabBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
-      const filter = this.getAttribute("data-filter")
+      const targetTab = this.getAttribute("data-tab")
 
       // Update active button
-      filterBtns.forEach((b) => b.classList.remove("active"))
+      tabBtns.forEach((b) => b.classList.remove("active"))
       this.classList.add("active")
 
-      // Show/hide projects
-      projectCards.forEach((card) => {
-        if (filter === "all" || card.classList.contains(filter)) {
-          card.style.display = "block"
+      // Show/hide categories
+      projectCategories.forEach((category) => {
+        category.classList.remove("active")
+        if (category.classList.contains(targetTab)) {
           setTimeout(() => {
-            card.style.opacity = "1"
-            card.style.transform = "translateY(0)"
+            category.classList.add("active")
           }, 100)
-        } else {
-          card.style.opacity = "0"
-          card.style.transform = "translateY(20px)"
-          setTimeout(() => {
-            card.style.display = "none"
-          }, 300)
         }
       })
     })
@@ -97,17 +91,6 @@ function scrollToContact() {
   })
 }
 
-// Mobile menu toggle
-function toggleMobileMenu() {
-  const navMenu = document.querySelector(".nav-menu")
-  const navActions = document.querySelector(".nav-actions")
-  const mobileBtn = document.querySelector(".mobile-menu-btn")
-
-  navMenu.classList.toggle("mobile-open")
-  navActions.classList.toggle("mobile-open")
-  mobileBtn.classList.toggle("active")
-}
-
 // Navbar scroll effect
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar")
@@ -116,7 +99,6 @@ window.addEventListener("scroll", () => {
     navbar.style.backdropFilter = "blur(20px)"
   } else {
     navbar.style.background = "rgba(255, 255, 255, 0.95)"
-    navbar.style.backdropFilter = "blur(10px)"
   }
 })
 
@@ -138,7 +120,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(
-    ".hero-content, .hero-visual, .about-grid, .services-grid, .projects-grid, .contact-content",
+    ".hero-container, .about-grid, .services-grid, .projects-grid, .contact-grid",
   )
   animatedElements.forEach((el) => {
     el.style.opacity = "0"
@@ -148,13 +130,11 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
-// Parallax effect for hero shapes
+// Parallax effect for hero background
 window.addEventListener("scroll", () => {
   const scrolled = window.pageYOffset
-  const shapes = document.querySelectorAll(".bg-shape-1, .bg-shape-2, .bg-shape-3, .bg-shape-4")
-
-  shapes.forEach((shape, index) => {
-    const speed = (index + 1) * 0.1
-    shape.style.transform += ` translateY(${scrolled * speed}px)`
-  })
+  const bgShape = document.querySelector(".bg-shape")
+  if (bgShape) {
+    bgShape.style.transform = `translateY(${scrolled * 0.1}px)`
+  }
 })

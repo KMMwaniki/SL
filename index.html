@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUVIDA - Kenya's Premier Construction Company</title>
-    <meta name="description" content="Building Kenya's future with excellence and innovation">
+    <title>SUVIDA - The First Kenya Construction Excellence Platform</title>
+    <meta name="description" content="Leading construction innovation in Kenya">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="/images/sl1.png" alt="SUVIDA" class="brand-logo">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/s%20%282%29-rbxiqg9ZJniOVhaFgfFDbZ6p50ToJf.png" alt="SUVIDA" class="nav-logo">
                 <span class="brand-text">SUVIDA</span>
             </div>
             
@@ -28,174 +28,188 @@
             </div>
             
             <div class="nav-actions">
-                <button class="btn-outline" onclick="handleWhatsApp('+254720167553')">Get Quote</button>
-                <button class="btn-primary" onclick="scrollToContact()">Start Project</button>
+                <button class="nav-btn secondary" onclick="handleWhatsApp('+254720167553')">Get Quote</button>
+                <button class="nav-btn primary" onclick="scrollToContact()">Start Project</button>
             </div>
-            
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background">
-            <div class="bg-shape-1"></div>
-            <div class="bg-shape-2"></div>
+            <div class="bg-shape"></div>
             <div class="bg-pattern"></div>
         </div>
         
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span class="badge-icon">🏆</span>
-                    <span>Kenya's #1 Construction Company</span>
+                    🏆 KENYA'S #1 CONSTRUCTION COMPANY
                 </div>
                 
                 <h1 class="hero-title">
-                    The First
-                    <span class="title-highlight">Kenya-Wide</span>
-                    Construction
-                    <span class="title-accent">Excellence</span>
+                    The First<br>
+                    <span class="title-highlight">Kenya-East Africa</span><br>
+                    Construction<br>
+                    Excellence Platform
                 </h1>
                 
                 <p class="hero-description">
-                    Building the most innovative structures across Kenya with 
-                    premium materials, expert craftsmanship, and unmatched reliability. 
-                    Licensed and trusted since 2008.
+                    Make the most innovative constructions with premium materials, 
+                    expert craftsmanship and cutting-edge project management systems
                 </p>
                 
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">500+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
-                </div>
+                <p class="hero-credentials">
+                    Licensed by National Construction Authority and certified by Kenya Bureau of Standards
+                </p>
                 
                 <div class="hero-actions">
-                    <button class="btn-hero-primary" onclick="scrollToProjects()">
-                        View Our Work
-                        <span class="btn-arrow">→</span>
+                    <button class="action-btn primary" onclick="scrollToProjects()">
+                        <span>View Projects</span>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
                     </button>
-                    <button class="btn-hero-secondary" onclick="handleWhatsApp('+254720167553')">
-                        <span class="btn-icon">📱</span>
-                        Call Now
+                    <button class="action-btn secondary" onclick="handleWhatsApp('+254720167553')">
+                        Start Now
                     </button>
                 </div>
             </div>
             
             <div class="hero-visual">
-                <div class="visual-main">
-                    <div class="project-showcase">
-                        <div class="showcase-header">
-                            <div class="header-dot"></div>
-                            <div class="header-dot"></div>
-                            <div class="header-dot"></div>
+                <div class="project-showcase">
+                    <div class="showcase-header">
+                        <div class="header-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <div class="showcase-content">
-                            <img src="/images/sl2.png" alt="Premium Construction" class="showcase-image">
-                            <div class="showcase-overlay">
-                                <div class="overlay-badge">
-                                    <span class="badge-text">PREMIUM QUALITY</span>
+                        <div class="header-title">SUVIDA Projects Dashboard</div>
+                    </div>
+                    
+                    <div class="showcase-content">
+                        <div class="project-stats">
+                            <div class="stat-card active">
+                                <div class="stat-icon">🏗️</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">127</div>
+                                    <div class="stat-label">Active Projects</div>
+                                </div>
+                                <div class="stat-trend">+12%</div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">🏠</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Completed</div>
+                                </div>
+                                <div class="stat-trend">+8%</div>
+                            </div>
+                            
+                            <div class="stat-card">
+                                <div class="stat-icon">⭐</div>
+                                <div class="stat-info">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Success Rate</div>
+                                </div>
+                                <div class="stat-trend">Perfect</div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-preview">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202022-09-30%20at%2012.35.48%20PM-LbtcyWn2TxgL5M9Z5lIe6ttKBHesry.jpeg" alt="Luxury Interior" class="preview-image">
+                            <div class="preview-overlay">
+                                <div class="overlay-content">
+                                    <h4>Luxury Residential Complex</h4>
+                                    <p>Modern 4-bedroom villa with premium finishes</p>
+                                    <div class="project-progress">
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 85%"></div>
+                                        </div>
+                                        <span>85% Complete</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="floating-card">
-                        <div class="card-icon">🏗️</div>
-                        <div class="card-content">
-                            <div class="card-title">Expert Craftsmanship</div>
-                            <div class="card-subtitle">15+ Years Experience</div>
-                        </div>
-                    </div>
                 </div>
                 
-                <div class="visual-secondary">
-                    <div class="secondary-card">
-                        <img src="/images/sl3.png" alt="Quality Materials" class="secondary-image">
-                        <div class="secondary-overlay">
-                            <div class="overlay-text">Premium Materials</div>
-                        </div>
+                <div class="floating-elements">
+                    <div class="float-card">
+                        <div class="card-icon">📱</div>
+                        <div class="card-text">Real-time Updates</div>
                     </div>
+                    <div class="float-card">
+                        <div class="card-icon">🔧</div>
+                        <div class="card-text">Expert Team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Partner Logos -->
+        <div class="partners-section">
+            <div class="partners-container">
+                <div class="partner-logo">
+                    <div class="logo-placeholder">NCA</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">KEBS</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">IEK</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">AAK</div>
+                </div>
+                <div class="partner-logo">
+                    <div class="logo-placeholder">BORAQS</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="section-container">
             <div class="about-grid">
                 <div class="about-content">
-                    <div class="section-badge">About Suvida</div>
+                    <div class="section-badge">Our Story</div>
                     <h2 class="section-title">
-                        Building Kenya's
-                        <span class="title-gradient">Future</span>
-                        Since 2008
+                        Building Kenya's Future
+                        <span class="title-accent">Since 2008</span>
                     </h2>
                     
                     <p class="about-text">
-                        We are a reputable, licensed construction company based in Nairobi, 
-                        specializing in premium residential and commercial construction projects 
-                        across Kenya.
+                        We revolutionized construction in Kenya by combining traditional 
+                        craftsmanship with modern technology and project management systems. 
+                        Our platform approach ensures every project is delivered with precision, 
+                        quality, and innovation.
                     </p>
                     
                     <div class="about-features">
                         <div class="feature-item">
-                            <div class="feature-icon">✅</div>
-                            <div class="feature-text">Licensed & Certified</div>
+                            <div class="feature-number">15+</div>
+                            <div class="feature-label">Years Experience</div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">⚡</div>
-                            <div class="feature-text">Fast & Reliable</div>
+                            <div class="feature-number">500+</div>
+                            <div class="feature-label">Projects Delivered</div>
                         </div>
                         <div class="feature-item">
-                            <div class="feature-icon">🎯</div>
-                            <div class="feature-text">Quality Guaranteed</div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🏆</div>
-                            <div class="feature-text">Award Winning</div>
+                            <div class="feature-number">100%</div>
+                            <div class="feature-label">Client Satisfaction</div>
                         </div>
                     </div>
-                    
-                    <button class="btn-about" onclick="scrollToContact()">
-                        Start Your Project
-                        <span class="btn-arrow">→</span>
-                    </button>
                 </div>
                 
                 <div class="about-visual">
-                    <div class="visual-grid">
-                        <div class="grid-item large">
-                            <img src="/images/sl4.png" alt="Modern Interior">
-                            <div class="item-overlay">
-                                <div class="overlay-badge">Interior Design</div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <img src="/images/sl5.png" alt="Luxury Bedroom">
-                            <div class="item-overlay">
-                                <div class="overlay-badge">Luxury Spaces</div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <img src="/images/sl6.png" alt="Modern Kitchen">
-                            <div class="item-overlay">
-                                <div class="overlay-badge">Modern Kitchens</div>
-                            </div>
+                    <div class="image-composition">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/s%20%281%29.png-r8ZPJwmBvCNwdGFfdTl3WzAw9vCF5p.jpeg" alt="Premium Construction Materials" class="main-image">
+                        <div class="image-badge">
+                            <div class="badge-icon">🏆</div>
+                            <div class="badge-text">Award Winning Quality</div>
                         </div>
                     </div>
                 </div>
@@ -204,77 +218,73 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services-section">
         <div class="section-container">
-            <div class="services-header">
+            <div class="section-header">
                 <div class="section-badge">Our Services</div>
                 <h2 class="section-title">
                     Complete Construction
-                    <span class="title-gradient">Solutions</span>
+                    <span class="title-accent">Solutions</span>
                 </h2>
-                <p class="section-description">
-                    From concept to completion, we deliver exceptional construction 
-                    services that exceed expectations.
-                </p>
             </div>
             
             <div class="services-grid">
                 <div class="service-card featured">
                     <div class="card-header">
-                        <div class="card-icon">
+                        <div class="service-icon">
                             <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H3m2 0h3M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H3m2 0h3M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                             </svg>
                         </div>
-                        <div class="card-badge">Most Popular</div>
+                        <div class="service-badge">Most Popular</div>
                     </div>
-                    <h3 class="card-title">Construction Management</h3>
-                    <p class="card-description">
-                        End-to-end project management ensuring quality, timeline, 
-                        and budget adherence for all construction projects.
+                    <h3 class="service-title">Construction Management</h3>
+                    <p class="service-description">
+                        End-to-end project management with real-time tracking, 
+                        quality control, and budget optimization.
                     </p>
-                    <div class="card-features">
-                        <div class="feature">✓ Project Planning</div>
-                        <div class="feature">✓ Quality Control</div>
-                        <div class="feature">✓ Budget Management</div>
-                        <div class="feature">✓ Timeline Optimization</div>
+                    <div class="service-features">
+                        <div class="feature">✓ Project Planning & Design</div>
+                        <div class="feature">✓ Quality Assurance</div>
+                        <div class="feature">✓ Timeline Management</div>
+                        <div class="feature">✓ Budget Control</div>
                     </div>
                 </div>
                 
                 <div class="service-card">
                     <div class="card-header">
-                        <div class="card-icon">
+                        <div class="service-icon">
                             <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                             </svg>
                         </div>
                     </div>
-                    <h3 class="card-title">Custom Homes</h3>
-                    <p class="card-description">
-                        Bespoke residential construction that transforms your 
-                        dream home into reality with premium finishes.
+                    <h3 class="service-title">Custom Homes</h3>
+                    <p class="service-description">
+                        Bespoke residential construction with premium materials 
+                        and personalized design solutions.
                     </p>
-                    <div class="card-features">
-                        <div class="feature">✓ Custom Design</div>
-                        <div class="feature">✓ Premium Materials</div>
-                        <div class="feature">✓ Modern Architecture</div>
+                    <div class="service-features">
+                        <div class="feature">✓ Custom Architecture</div>
+                        <div class="feature">✓ Premium Finishes</div>
+                        <div class="feature">✓ Smart Home Integration</div>
                     </div>
                 </div>
                 
                 <div class="service-card">
                     <div class="card-header">
-                        <div class="card-icon">
+                        <div class="service-icon">
                             <svg width="40" height="40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
                             </svg>
                         </div>
                     </div>
-                    <h3 class="card-title">Renovations & Interiors</h3>
-                    <p class="card-description">
-                        Transform existing spaces with modern design solutions 
-                        and expert renovation services.
+                    <h3 class="service-title">Renovations & Interiors</h3>
+                    <p class="service-description">
+                        Transform existing spaces with modern design and 
+                        innovative renovation solutions.
                     </p>
-                    <div class="card-features">
+                    <div class="service-features">
                         <div class="feature">✓ Space Optimization</div>
                         <div class="feature">✓ Modern Upgrades</div>
                         <div class="feature">✓ Interior Design</div>
@@ -285,57 +295,115 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects-section">
         <div class="section-container">
-            <div class="projects-header">
-                <div class="section-badge">Our Portfolio</div>
+            <div class="section-header">
+                <div class="section-badge">Featured Projects</div>
                 <h2 class="section-title">
-                    Featured
-                    <span class="title-gradient">Projects</span>
+                    Our Latest
+                    <span class="title-accent">Masterpieces</span>
                 </h2>
                 
-                <div class="projects-filter">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="interior">Interiors</button>
-                    <button class="filter-btn" data-filter="exterior">Exteriors</button>
+                <div class="project-tabs">
+                    <button class="tab-btn active" data-tab="interiors">Interior Projects</button>
+                    <button class="tab-btn" data-tab="exteriors">Exterior Projects</button>
                 </div>
             </div>
             
-            <div class="projects-grid">
-                <div class="project-card interior" data-category="interior">
-                    <div class="project-image">
-                        <img src="/images/sl4.png" alt="Modern Living Space">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="project-category">Interior Design</div>
-                                <h4 class="project-title">Luxury Living Space</h4>
-                                <p class="project-description">Contemporary design with premium finishes</p>
+            <div class="projects-gallery">
+                <!-- Interior Projects -->
+                <div class="project-category interiors active">
+                    <div class="projects-grid">
+                        <div class="project-card hero-card">
+                            <div class="project-image">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202022-09-30%20at%2012.35.48%20PM-LbtcyWn2TxgL5M9Z5lIe6ttKBHesry.jpeg" alt="Modern Living Space">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <div class="project-status">Completed</div>
+                                        <h4>Luxury Living Complex</h4>
+                                        <p>Contemporary design with premium finishes and smart home integration</p>
+                                        <div class="project-meta">
+                                            <span>2023</span>
+                                            <span>Nairobi</span>
+                                            <span>Residential</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202022-10-03%20at%2010.00.36%20AM-QJSfvQ5AqowGW9mV2wYOpWoyWDczOz.jpeg" alt="Master Bedroom">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <div class="project-status">Completed</div>
+                                        <h4>Executive Master Suite</h4>
+                                        <p>Luxury bedroom with custom features</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202022-09-30%20at%2012.35.36%20PM-cwKqnhiF2yW23fN6saPUwarcJffvtM.jpeg" alt="Modern Kitchen">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <div class="project-status">Completed</div>
+                                        <h4>Gourmet Kitchen</h4>
+                                        <p>State-of-the-art culinary space</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="project-card interior" data-category="interior">
-                    <div class="project-image">
-                        <img src="/images/sl5.png" alt="Master Bedroom">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="project-category">Bedroom Design</div>
-                                <h4 class="project-title">Executive Suite</h4>
-                                <p class="project-description">Luxury redefined in every detail</p>
+                <!-- Exterior Projects -->
+                <div class="project-category exteriors">
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gem1.jpg-H4FiwIz6G3MKcS1pwquVgxpBEY8H5W.jpeg" alt="Commercial Project">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <div class="project-status">Completed</div>
+                                        <h4>Glass Pyramid Maintenance</h4>
+                                        <p>High-rise commercial maintenance</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="project-card interior" data-category="interior">
-                    <div class="project-image">
-                        <img src="/images/sl6.png" alt="Modern Kitchen">
-                        <div class="project-overlay">
-                            <div class="overlay-content">
-                                <div class="project-category">Kitchen Design</div>
-                                <h4 class="project-title">Culinary Theater</h4>
-                                <p class="project-description">Where functionality meets artistry</p>
+                        
+                        <div class="project-card hero-card">
+                            <div class="project-image">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gem2.jpg-CneYmNHJNXTPt620hc0HbNUsYlVkxk.jpeg" alt="Facade Work">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <div class="project-status">Completed</div>
+                                        <h4>Urban Facade Restoration</h4>
+                                        <p>Professional building restoration and maintenance services</p>
+                                        <div class="project-meta">
+                                            <span>2023</span>
+                                            <span>CBD</span>
+                                            <span>Commercial</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/townh.jpg-tmuwBOROK6VO1rm1fVmXG4WNHWhI3W.jpeg" alt="Townhouse">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <div class="project-status">Completed</div>
+                                        <h4>Modern Townhouse Complex</h4>
+                                        <p>Contemporary residential development</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,81 +413,80 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="contact-background">
-            <div class="bg-shape-3"></div>
-            <div class="bg-shape-4"></div>
-        </div>
-        
+    <section id="contact" class="contact-section">
         <div class="section-container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="section-badge white">Get In Touch</div>
-                    <h2 class="section-title white">
-                        Ready to Build
-                        <span class="title-white">Something Amazing?</span>
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <div class="section-badge">Get Started</div>
+                    <h2 class="section-title">
+                        Ready to Build Your
+                        <span class="title-accent">Dream Project?</span>
                     </h2>
                     
                     <p class="contact-description">
-                        Let's discuss your vision and create something extraordinary together. 
-                        Our team is ready to bring your project to life.
+                        Join hundreds of satisfied clients who chose SUVIDA for their 
+                        construction needs. Get started with a free consultation today.
                     </p>
                     
-                    <div class="contact-methods">
-                        <div class="method-card" onclick="handleWhatsApp('+254720167553')">
-                            <div class="method-icon">📱</div>
-                            <div class="method-info">
-                                <div class="method-title">WhatsApp</div>
-                                <div class="method-detail">+254 720 167553</div>
+                    <div class="contact-actions">
+                        <button class="contact-btn primary" onclick="handleWhatsApp('+254720167553')">
+                            <div class="btn-icon">📱</div>
+                            <div class="btn-content">
+                                <div class="btn-title">WhatsApp Us</div>
+                                <div class="btn-subtitle">Instant response</div>
                             </div>
-                            <div class="method-arrow">→</div>
-                        </div>
+                        </button>
                         
-                        <div class="method-card" onclick="handleEmail()">
-                            <div class="method-icon">✉️</div>
-                            <div class="method-info">
-                                <div class="method-title">Email</div>
-                                <div class="method-detail">info@suvida.org</div>
+                        <button class="contact-btn secondary" onclick="handleEmail()">
+                            <div class="btn-icon">✉️</div>
+                            <div class="btn-content">
+                                <div class="btn-title">Email Us</div>
+                                <div class="btn-subtitle">Detailed inquiry</div>
                             </div>
-                            <div class="method-arrow">→</div>
-                        </div>
-                        
-                        <div class="method-card" onclick="handleInstagram()">
-                            <div class="method-icon">📸</div>
-                            <div class="method-info">
-                                <div class="method-title">Instagram</div>
-                                <div class="method-detail">@suvida_limited</div>
-                            </div>
-                            <div class="method-arrow">→</div>
-                        </div>
+                        </button>
                     </div>
                 </div>
                 
-                <div class="contact-details">
-                    <div class="details-grid">
-                        <div class="detail-item">
-                            <div class="detail-icon">📍</div>
-                            <div class="detail-content">
-                                <h4>Office Location</h4>
+                <div class="contact-info">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h4>Visit Our Office</h4>
                                 <p>Hurlingham Plaza<br>P.O Box 40959-00100<br>Nairobi, Kenya</p>
-                                <span class="detail-note">Parking Available</span>
+                                <div class="info-note">Premium parking available</div>
                             </div>
                         </div>
                         
-                        <div class="detail-item">
-                            <div class="detail-icon">🕒</div>
-                            <div class="detail-content">
-                                <h4>Working Hours</h4>
-                                <div class="hours-grid">
-                                    <div class="hours-row">
-                                        <span>Monday - Friday</span>
-                                        <span>8:00 AM - 5:00 PM</span>
-                                    </div>
-                                    <div class="hours-row">
-                                        <span>Weekends</span>
-                                        <span>By Appointment</span>
-                                    </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>Call Direct</h4>
+                                <p onclick="handleWhatsApp('+254720167553')" class="clickable">+254 720 167553</p>
+                                <p onclick="handleWhatsApp('+254780592864')" class="clickable">+254 780 592864</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-content">
+                                <h4>Office Hours</h4>
+                                <div class="hours-row">
+                                    <span>Mon - Fri</span>
+                                    <span>8:00 - 17:00</span>
                                 </div>
+                                <div class="hours-row">
+                                    <span>Weekends</span>
+                                    <span>By Appointment</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">📱</div>
+                            <div class="info-content">
+                                <h4>Follow Us</h4>
+                                <p onclick="handleInstagram()" class="clickable">@suvida_limited</p>
                             </div>
                         </div>
                     </div>
