@@ -75,7 +75,7 @@ function handleEmail() {
 }
 
 function handleInstagram() {
-  window.open("https://instagram.com/suvida_limited", "_blank")
+  window.open("https://instagram.com/suvida_kenya", "_blank")
 }
 
 // Scroll functions
